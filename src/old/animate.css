@@ -1,0 +1,70 @@
+.animate-container {
+    background-color: black;
+    width: 100vw;
+    height: 109vh;
+}
+
+.box-container {
+    height: 109vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-a {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.box-b {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 30%;
+    position: absolute;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.box-c {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 50%;
+    position: absolute;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.card-a {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 10%;
+    position: absolute;
+}
+
+.card-b {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 90%;
+    position: absolute;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.card-c {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 100%;
+    position: absolute;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+

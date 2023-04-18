@@ -1,0 +1,12 @@
+.petpage-galleryopen {
+  margin-bottom: 100vh;
+}
+
+.pet-title-container {
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: var(--ff-primary);
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}

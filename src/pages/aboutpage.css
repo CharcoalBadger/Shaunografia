@@ -1,0 +1,26 @@
+.aboutpage-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.aboutpage-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--body-color);
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  font-size: var(--step-3);
+}
+
+.aboutpage-box {
+  padding: 0 10px 0 10px;
+}
+
+@media (min-width: 768px) {
+  .aboutpage-box {
+    padding: 0 10% 0 10%;
+  }
+}

@@ -1,0 +1,119 @@
+.landing-loop-container {
+  position: absolute;
+  top: 29%;
+  left: 0;
+  z-index: -4;
+  height: 20rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.landing-loop-container::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.landing-loop-title {
+  font-size: 8em;
+  font-family: Sofia, sans-serif;
+  font-weight: bolder;
+  color: #1c3035;
+  margin-right: 70%;
+}
+
+@media (min-height: 812px) {
+  .landing-loop-container {
+    top: 31%;
+  }
+}
+
+@media (min-width: 601px) {
+  .landing-loop-container {
+    top: 25%;
+    height: 30rem;
+  }
+  .landing-loop-title {
+    font-size: 10em;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-loop-container {
+    top: 25%;
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-loop-container {
+    top: 30%;
+    height: 30rem;
+  }
+}
+
+@media (min-height: 800px) {
+  .landing-loop-container {
+    top: 33%;
+    height: 30rem;
+  }
+}
+
+@media (min-height: 1024px) {
+  .landing-loop-container {
+    top: 30%;
+    height: 30rem;
+  }
+  .landing-loop-title {
+    font-size: 12em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .landing-loop-container {
+    top: 29%;
+    height: 30rem;
+  }
+  .landing-loop-title {
+    font-size: 12em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .landing-loop-container {
+    top: 29%;
+    height: 35rem;
+  }
+  .landing-loop-title {
+    font-size: 14em;
+  }
+}
+
+@media (min-width: 1620px) {
+  .landing-loop-container {
+    top: 35%;
+    height: 40rem;
+  }
+  .landing-loop-title {
+    font-size: 16em;
+  }
+}
+
+@media (min-width: 1792px) {
+  .landing-loop-container {
+    top: 24%;
+    height: 40rem;
+  }
+  .landing-loop-title {
+    font-size: 16em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .landing-loop-container {
+    top: 33%;
+    height: 40rem;
+  }
+  .landing-loop-title {
+    font-size: 16em;
+  }
+}

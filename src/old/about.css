@@ -1,0 +1,148 @@
+.about-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414;
+    height: 109vh;
+    width: 100vw;
+  }
+  
+  .about-text-title {
+    text-align: center;
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    font-size: 32px;
+    color: #F9F9F9;
+  }
+  
+  .about-text-name {
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    color:#F9F9F9; /* 60% */
+    z-index: 2;
+  }
+  
+  .about-text-name h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #F9F9F9; /* 30% */
+    background-color: #2B92B5;
+    width: 110%;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .about-text {
+    width: 20%;
+    color:#F9F9F9; /* 60% */
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    bottom: 10%;
+    opacity: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  
+  .about-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  
+  .about-image-container {
+    bottom: 10%;
+    left: 3%;
+    position: absolute;
+    width: 20%;
+    height: 70%;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about-image img {
+    width: auto;
+    height: 100%;
+  }
+
+  .pexel-white {
+    width: 50px;
+    height: 50px;
+    margin-left: 2%;
+  }
+
+  .insta-white {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .social-icons a:hover img {
+    filter: brightness(70%);
+  }
+  
+  @media (min-width: 1366px) {
+    .about-text-title {
+      text-align: center;
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      font-size: 42px;
+      color: #F9F9F9;
+    }
+    .about-text {
+      width: 20%;
+      color:#F9F9F9; /* 60% */
+      position: absolute;
+      z-index: 1;
+      left: 25%;
+      bottom: 10%;
+    }
+    
+    .about-text p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .about-text-title {
+      text-align: center;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      font-size: 42px;
+      color: #F9F9F9;
+    }
+  
+    .about-text {
+      width: 20%;
+      color:#F9F9F9; /* 60% */
+      position: absolute;
+      z-index: 1;
+      left: 25%;
+      bottom: 20%;
+    }
+    
+    .about-text p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+  }
+  
+  
