@@ -1,0 +1,85 @@
+.pricing-container {
+  height: 70vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pricing-main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pricing-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--body-color);
+  font-family: var(--ff-primary);
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.pricing-para-one {
+  font-weight: var(--body-weight);
+  font-family: var(--ff-secondary);
+  text-align: center;
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.pricing-para-two {
+  font-weight: var(--body-weight);
+  font-family: var(--ff-secondary);
+  text-align: center;
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.pricing-button {
+  font-family: var(--ff-secondary);
+  font-weight: var(--body-weight-secondary);
+  font-size: 11px;
+  color: var(--body-color);
+  background-color: transparent;
+  border: 1px solid var(--body-color);
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  position: relative;
+  top: 1rem;
+}
+
+.pricing-button:hover {
+  background-color: var(--body-hover);
+  transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 601px) {
+  .pricing-container {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 962px) {
+  .pricing-container {
+    height: 60vh;
+  }
+}
+
+@media (min-height: 2160px) {
+  .pricing-container {
+    height: 30vh;
+  }
+}

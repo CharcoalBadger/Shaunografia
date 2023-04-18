@@ -1,0 +1,173 @@
+.navbar-container {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  position: relative;
+}
+.navbar-left-button:hover .nav-logo {
+  opacity: 1;
+}
+
+.navbar-left-button {
+  position: relative;
+  top: 8px;
+  left: 3%;
+  width: 30vw;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.nav-darkmode {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -2px;
+  right: 12px; /* Add this to position the element to the far right */
+}
+
+.nav-logo {
+  width: var(--step-1);
+  height: auto;
+  background: none;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-name {
+  font-family: Sofia, sans-serif;
+  color: var(--body-color);
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+  font-weight: var(--body-weight);
+}
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-view {
+    display: block;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-left-button:hover .nav-name {
+    opacity: 1;
+  }
+
+  /* this extends the width and also creates a gradient */
+  .navbar-left-button:hover .nav-underline {
+    background-image: linear-gradient(
+      to right,
+      rgb(237, 34, 36),
+      rgb(243, 91, 34),
+      rgb(249, 150, 33),
+      rgb(245, 193, 30),
+      rgb(241, 235, 27) 27%,
+      rgb(241, 235, 27),
+      rgb(241, 235, 27) 33%,
+      rgb(99, 199, 32),
+      rgb(12, 155, 73),
+      rgb(33, 135, 141),
+      rgb(57, 84, 165),
+      rgb(97, 55, 155),
+      rgb(147, 40, 142)
+    );
+    width: 170px;
+    transition: width 1s ease;
+  }
+  /* this makes an invisble line for an onHover */
+  .nav-underline {
+    position: absolute;
+    height: 4px;
+    width: 0;
+    top: 80%;
+    left: 16%;
+    background-image: linear-gradient(
+      to right,
+      rgb(237, 34, 36),
+      rgb(243, 91, 34),
+      rgb(249, 150, 33),
+      rgb(245, 193, 30),
+      rgb(241, 235, 27) 27%,
+      rgb(241, 235, 27),
+      rgb(241, 235, 27) 33%,
+      rgb(99, 199, 32),
+      rgb(12, 155, 73),
+      rgb(33, 135, 141),
+      rgb(57, 84, 165),
+      rgb(97, 55, 155),
+      rgb(147, 40, 142)
+    );
+    transition: width 1s ease;
+  }
+  .navbar-left-button {
+    left: 3%;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar-left-button {
+    left: 3%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-left-button {
+    left: 4%;
+  }
+}
+
+@media (min-width: 962px) and (min-height: 601px) {
+  .nav-underline {
+    top: 80%;
+    left: 14%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-underline {
+    top: 82%;
+    left: 11%;
+  }
+  .navbar-left-button:hover .nav-underline {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .nav-underline {
+    top: 83%;
+    left: 10%;
+  }
+  .navbar-left-button:hover .nav-underline {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .nav-underline {
+    top: 83%;
+    left: 9%;
+  }
+  .navbar-left-button:hover .nav-underline {
+    width: 210px;
+  }
+}

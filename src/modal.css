@@ -1,0 +1,222 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%; /* Increase the width to 90% */
+  max-width: 100%;
+  height: 90%;
+  background-color: transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  top: 5%;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.modal-image-container {
+  position: relative;
+  height: calc(100% - 3% - 5px);
+}
+
+.modal-image-background {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Change from cover to contain */
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.image-info {
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20%;
+  color: var(--body-background);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  color: var(--body-color);
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow {
+  display: none;
+}
+
+.slide-left-enter {
+  transform: translateX(100%);
+}
+.slide-left-enter-active {
+  transform: translateX(0);
+  transition: transform 1s;
+}
+.slide-left-exit {
+  transform: translateX(0);
+}
+.slide-left-exit-active {
+  transform: translateX(-100%);
+  transition: transform 1s;
+}
+
+.slide-right-enter {
+  transform: translateX(-100%);
+}
+.slide-right-enter-active {
+  transform: translateX(0);
+  transition: transform 1s;
+}
+.slide-right-exit {
+  transform: translateX(0);
+}
+.slide-right-exit-active {
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 80%; /* Increased from 60% */
+    height: 90%; /* Increased from 80% */
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    top: 5%;
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .modal-image-container {
+    position: relative;
+    height: calc(100% - 3% - 5px);
+  }
+
+  .modal-image-background {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-color: transparent;
+    z-index: -1;
+  }
+
+  .modal-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .image-info {
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20%;
+    color: var(--body-background);
+  }
+
+  .modal-open {
+    overflow: hidden;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    color: var(--body-color);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: var(--body-color);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+    display: block;
+  }
+
+  .arrow-left {
+    left: 10%;
+  }
+
+  .arrow-right {
+    right: 10%;
+  }
+}

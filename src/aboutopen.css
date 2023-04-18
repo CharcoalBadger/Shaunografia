@@ -1,0 +1,46 @@
+.about-open-container {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 50vh;
+}
+
+.about-open-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sticky-header {
+  top: 20%;
+  position: sticky;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-open-shaun {
+  font-size: var(--step-5);
+  color: var(--body-color);
+}
+
+.about-open-lal {
+  font-size: var(--step-5);
+  color: var(--body-color);
+}
+
+.about-open-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 25%;
+}
+
+.about-open-image {
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+}
