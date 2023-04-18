@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Navbar from "./navbar";
-import Landingpage from "./landingpage";
-import Aboutsection from "./aboutsection";
-import Creative from "./creative";
-import Wedding from "./wedding";
-import Event from "./event";
-import Pricing from "./pricing";
-import Maincontact from "./maincontact";
-import Footer from "./footer";
+import Navbar from "./src/navbar";
+import Landingpage from "./src/landingpage";
+import Aboutsection from "./src/aboutsection";
+import Creative from "./src/creative";
+import Wedding from "./src/wedding";
+import Event from "./src/event";
+import Pricing from "./src/pricing";
+import Maincontact from "./src/maincontact";
+import Footer from "./src/footer";
 
 function App() {
   // This is to dynamically load certain components based on width of screen sizes
