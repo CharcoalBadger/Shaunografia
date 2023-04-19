@@ -104,7 +104,7 @@ export default function Aboutsection() {
   return (
     <div className="about-section-container">
       <div className="about-section-inner">
-        <h1 className="about-title">Kia Oraaaaaaa!</h1>
+        <h1 className="about-title">Kia Ora!</h1>
         <div className="about-name-gif-container">
           <h2 className="about-name">
             I'm Shaun
