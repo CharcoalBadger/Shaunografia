@@ -21,74 +21,74 @@ export default function Footer() {
     return () => window.removeEventListener("resize", updateFooter);
   });
 
-  useEffect(() => {
-    gsap.from(".footer-insta-white", {
-      scrollTrigger: {
-        trigger: ".footer-section-inner p",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.5,
-    });
+  // useEffect(() => {
+  //   gsap.from(".footer-insta-white", {
+  //     scrollTrigger: {
+  //       trigger: ".footer-section-inner p",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1.5,
+  //   });
 
-    gsap.from(".footer-pexel-white", {
-      scrollTrigger: {
-        trigger: ".footer-section-inner p",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.6,
-    });
+  //   gsap.from(".footer-pexel-white", {
+  //     scrollTrigger: {
+  //       trigger: ".footer-section-inner p",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1.6,
+  //   });
 
-    gsap.from(".footer-section-inner p", {
-      scrollTrigger: {
-        trigger: ".footer-section-inner p",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      stagger: 0.1,
-      y: 100,
-      duration: 1.7,
-    });
+  //   gsap.from(".footer-section-inner p", {
+  //     scrollTrigger: {
+  //       trigger: ".footer-section-inner p",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     stagger: 0.1,
+  //     y: 100,
+  //     duration: 1.7,
+  //   });
 
-    gsap.from(".footer-links", {
-      scrollTrigger: {
-        trigger: ".footer-section-inner p",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.8,
-    });
+  //   gsap.from(".footer-links", {
+  //     scrollTrigger: {
+  //       trigger: ".footer-section-inner p",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1.8,
+  //   });
 
-    gsap.from(".footer-button", {
-      scrollTrigger: {
-        trigger: ".footer-section-inner p",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      stagger: 0.1,
-      duration: 1.6,
-    });
-  }, []);
+  //   gsap.from(".footer-button", {
+  //     scrollTrigger: {
+  //       trigger: ".footer-section-inner p",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     stagger: 0.1,
+  //     duration: 1.6,
+  //   });
+  // }, []);
 
   return (
     <div className="footer-section-container">

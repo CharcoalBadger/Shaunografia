@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./pricing.css";
 // import { Link} from "react-router-dom";
 import { gsap } from "gsap";
@@ -7,59 +7,59 @@ import Linktotop from "./linktotop";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Pricing() {
-  useEffect(() => {
-    // gsap.from(".pricing-title", {
-    //   scrollTrigger: {
-    //     trigger: ".pricing-title",
-    //     start: "top 80%",
-    //     end: "bottom 400px",
-    //   },
-    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-    //   opacity: 0,
-    //   ease: "power4.inOut",
-    //   y: 100,
-    //   duration: 1,
-    // });
+  // useEffect(() => {
+  //   gsap.from(".pricing-title", {
+  //     scrollTrigger: {
+  //       trigger: ".pricing-title",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1,
+  //   });
 
-    gsap.from(".pricing-para-one", {
-      scrollTrigger: {
-        trigger: ".pricing-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.5,
-    });
+  //   gsap.from(".pricing-para-one", {
+  //     scrollTrigger: {
+  //       trigger: ".pricing-title",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1.5,
+  //   });
 
-    gsap.from(".pricing-para-two", {
-      scrollTrigger: {
-        trigger: ".pricing-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 2,
-    });
+  //   gsap.from(".pricing-para-two", {
+  //     scrollTrigger: {
+  //       trigger: ".pricing-title",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 2,
+  //   });
 
-    gsap.from(".pricing-button", {
-      scrollTrigger: {
-        trigger: ".pricing-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.5,
-    });
-  }, []);
+  //   gsap.from(".pricing-button", {
+  //     scrollTrigger: {
+  //       trigger: ".pricing-title",
+  //       start: "top 80%",
+  //       end: "bottom 400px",
+  //     },
+  //     "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+  //     opacity: 0,
+  //     ease: "power4.inOut",
+  //     y: 100,
+  //     duration: 1.5,
+  //   });
+  // }, []);
 
   return (
     <div className="pricing-container">
