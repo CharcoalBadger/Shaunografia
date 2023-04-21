@@ -61,12 +61,13 @@ export default function Aboutpage() {
       y: 100,
       duration: 2.5,
     });
+
     if (window.innerWidth <= 767) {
       console.log("if");
       console.log("if" + window.innerWidth);
       const tlfl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".footer-link-container",
+          trigger: ".shortfooter-section-container",
           start: "bottom bottom",
           end: "bottom bottom",
           scrub: true,
