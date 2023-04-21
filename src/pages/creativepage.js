@@ -106,25 +106,19 @@ export default function Creativepage() {
         <Galleryopen />
       </div>
       <div className="leila-title-container">
-        <h3 className="leila-title">
-          Leila's Timeless Journey: Trains, Tracks, and River Rhapsody
-        </h3>
+        <h3 className="leila-title">Leila</h3>
       </div>
       <div className="creativeopen-imagegallery">
         <Imagegallery />
       </div>
       <div className="mv-title-container">
-        <h3 className="mv-title">
-          Myx & Val's Enchanting Escape: A Bird Park Picnic Romance
-        </h3>
+        <h3 className="mv-title">Myx & Val</h3>
       </div>
       <div>
         <Myxvalgallery />
       </div>
       <div className="jess-title-container">
-        <h3 className="jess-title">
-          Jess's Garden Glamour: A Vogue Affair at Hamilton Gardens
-        </h3>
+        <h3 className="jess-title">Jess</h3>
       </div>
       <div>
         <Jessgallery />
