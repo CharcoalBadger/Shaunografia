@@ -1,7 +1,7 @@
 .about-open-container {
   height: 100vh;
   width: 100vw;
-  margin-bottom: 100vh;
+  margin-bottom: 50vh;
 }
 
 .about-open-inner {
@@ -15,7 +15,7 @@
 }
 
 .extra-space {
-  height: 150vh; /* Adjust this value to control how much longer the sticky header will scroll */
+  height: 100vh; /* Adjust this value to control how much longer the sticky header will scroll */
 }
 
 .sticky-header {
