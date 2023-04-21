@@ -6,6 +6,7 @@ import Navbar from "../navbar";
 import Shortfooter from "../shortfooter";
 import Backtotop from "../backtotop";
 import Aboutopen from "../aboutopen";
+import Aboutstar from "../aboutstar";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Aboutpage() {
@@ -104,6 +105,7 @@ export default function Aboutpage() {
   }, []);
   return (
     <div className="aboutpage-container">
+      <Aboutstar />
       <div className="aboutpage-back">
         <Backtotop />
       </div>
@@ -116,13 +118,19 @@ export default function Aboutpage() {
       <div className="aboutpage-box">
         <div className="about-section-inner">
           <h1 className="about-title">Kia Ora!</h1>
-          <h2 className="about-name">
-            I'm<span className="colored-shaun"> Shaun </span>
-            <span className="colored-theythem">(They/Them)</span>
-          </h2>
+          <div className="aboutpage-name-gif-container">
+            <h2 className="about-name">
+              I'm Shaun
+              <span className="colored-theythem"> (They/Them)</span>
+            </h2>
+            <img
+              className="aboutpage-gif"
+              src="/progressiveflag.webp"
+              alt="Gif"
+            />
+          </div>
           <p className="about-p1">
-            I am a creative photographer originally from the Philippines, but
-            now proud to call New Zealand my home.
+            I am a creative photographer from New Zealand.
           </p>
           <p className="about-p1">
             I've had a passion for photography for over 5 years and have been

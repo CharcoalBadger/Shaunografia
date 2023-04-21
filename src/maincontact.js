@@ -50,58 +50,54 @@ export default function Maincontact() {
     //   y: 100,
     //   duration: 1,
     // });
-
-    gsap.from(".maincontact-subtitle", {
-      scrollTrigger: {
-        trigger: ".maincontact-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.5,
-    });
-
-    gsap.from(".form-input", {
-      scrollTrigger: {
-        trigger: ".maincontact-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 2,
-    });
-
-    gsap.from(".form-textarea", {
-      scrollTrigger: {
-        trigger: ".maincontact-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 2.5,
-    });
-
-    gsap.from(".form-button", {
-      scrollTrigger: {
-        trigger: ".maincontact-title",
-        start: "top 80%",
-        end: "bottom 400px",
-      },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 1.5,
-    });
+    // gsap.from(".maincontact-subtitle", {
+    //   scrollTrigger: {
+    //     trigger: ".maincontact-title",
+    //     start: "top 80%",
+    //     end: "bottom 400px",
+    //   },
+    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //   opacity: 0,
+    //   ease: "power4.inOut",
+    //   y: 100,
+    //   duration: 1.5,
+    // });
+    // gsap.from(".form-input", {
+    //   scrollTrigger: {
+    //     trigger: ".maincontact-title",
+    //     start: "top 80%",
+    //     end: "bottom 400px",
+    //   },
+    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //   opacity: 0,
+    //   ease: "power4.inOut",
+    //   y: 100,
+    //   duration: 2,
+    // });
+    // gsap.from(".form-textarea", {
+    //   scrollTrigger: {
+    //     trigger: ".maincontact-title",
+    //     start: "top 80%",
+    //     end: "bottom 400px",
+    //   },
+    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //   opacity: 0,
+    //   ease: "power4.inOut",
+    //   y: 100,
+    //   duration: 2.5,
+    // });
+    // gsap.from(".form-button", {
+    //   scrollTrigger: {
+    //     trigger: ".maincontact-title",
+    //     start: "top 80%",
+    //     end: "bottom 400px",
+    //   },
+    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //   opacity: 0,
+    //   ease: "power4.inOut",
+    //   y: 100,
+    //   duration: 1.5,
+    // });
   }, []);
   return (
     <div className="maincontact-container">
