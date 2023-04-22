@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./aboutopen.css";
+import Downarrow from "./downarrow";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -43,6 +44,9 @@ export default function Aboutopen() {
           <div className="about-open-lal-container">
             <h1 className="about-open-lal">LAL</h1>
           </div>
+        </div>
+        <div className="about-open-downarrow">
+          <Downarrow />
         </div>
         <div className="extra-space"></div>
         <div className="about-open-image-container">

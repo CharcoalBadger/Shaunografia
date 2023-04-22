@@ -23,7 +23,7 @@ export default function Aboutpage() {
       y: 100,
       duration: 1,
     });
-    gsap.from(".about-title", {
+    gsap.from(".aboutpage-gif", {
       scrollTrigger: {
         trigger: ".about-title",
         start: "top 80%",
@@ -33,8 +33,20 @@ export default function Aboutpage() {
       opacity: 0,
       ease: "power4.inOut",
       y: 100,
-      duration: 1.5,
+      duration: 2,
     });
+    // gsap.from(".about-title", {
+    //   scrollTrigger: {
+    //     trigger: ".about-title",
+    //     start: "top 80%",
+    //     end: "bottom 400px",
+    //   },
+    //   "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //   opacity: 0,
+    //   ease: "power4.inOut",
+    //   y: 100,
+    //   duration: 1.5,
+    // });
 
     gsap.from(".about-name", {
       scrollTrigger: {
