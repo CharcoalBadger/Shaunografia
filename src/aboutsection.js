@@ -113,11 +113,11 @@ export default function Aboutsection() {
           <img className="gif" src="/progressiveflag.webp" alt="Gif" />
         </div>
         <p className="about-p1">
-          Discover captivating visuals by our non-binary photographer
-          (they/them) from New Zealand and the Philippines. With a passion for
-          creative photography, their diverse portfolio covers events, weddings,
-          engagements, and pet photoshoots. Combining multicultural influences
-          and attention to detail, they create memorable visual stories.
+          Discover captivating visuals by our non-binary photographer from New
+          Zealand and the Philippines. With a passion for creative photography,
+          their diverse portfolio covers events, weddings, engagements, and pet
+          photoshoots. Combining multicultural influences and attention to
+          detail, they create memorable visual stories.
         </p>
         <p className="about-p2">Let's create beautiful memories together!</p>
 

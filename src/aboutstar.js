@@ -18,11 +18,11 @@ export default function Aboutstar() {
     generateStars("stars3", 100);
   }, []);
   return (
-    <>
+    <div className="stars-container">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div id="title"></div>
-    </>
+    </div>
   );
 }

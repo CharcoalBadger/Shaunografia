@@ -21,8 +21,17 @@
 .sticky-header {
   top: 20%;
   position: sticky;
-  text-align: center;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 35vh;
+}
+
+.about-open-shaun-container,
+.about-open-lal-container {
+  text-align: center;
 }
 
 .about-open-shaun {
@@ -54,4 +63,13 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+
+@media (min-width: 1366px) {
+  .sticky-header {
+    margin-bottom: 25vh;
+  }
+  .about-open-container {
+    margin-bottom: 60vh;
+  }
 }
