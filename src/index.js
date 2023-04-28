@@ -10,6 +10,7 @@ import Contactpage from "./pages/contactpage";
 import Creativepage from "./pages/creativepage";
 import Eventpage from "./pages/eventpage";
 import Petpage from "./pages/petpage";
+import Bookingform from "./bookingform";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "petpage",
     element: <Petpage />,
+  },
+  {
+    path: "contactform",
+    element: <Bookingform />,
   },
 ]);
 

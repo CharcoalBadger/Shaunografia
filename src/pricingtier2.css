@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: row-reverse;
   width: 100%;
-  height: 100vh; /* set height to full viewport height */
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -19,6 +19,28 @@
 .header-title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.tab-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-option-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.divider {
+  width: 1px;
+  height: 1rem;
+  background-color: transparent;
+  margin: 0 5px;
 }
 
 .tabs {
@@ -43,7 +65,7 @@
 }
 
 .active {
-  color: #fff;
+  color: #119da4;
   background-color: var(--body-hover);
 }
 
@@ -71,13 +93,30 @@
 .tab-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.tab-subtitle {
+.tab-ind {
+  font-family: var(--ff-secondary);
+}
+
+.tab-duo {
+  font-family: var(--ff-secondary);
+}
+
+.tab-cost-ind {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tab-cost-duo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .feature-list {

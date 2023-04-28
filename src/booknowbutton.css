@@ -1,0 +1,23 @@
+.book-now-button {
+  font-family: var(--ff-secondary);
+  font-weight: var(--body-weight-secondary);
+  font-size: 11px;
+  color: var(--body-color);
+  background-color: transparent;
+  border: 1px solid var(--body-color);
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  position: relative;
+  top: 1rem;
+}
+
+.book-now-button:hover {
+  background-color: var(--body-hover);
+  transition: 0.3s ease-in-out;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./pricingtier2.css";
+import Booknowbutton from "./booknowbutton";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -39,9 +40,18 @@ export default function Pricingtier2() {
       <div className="content-body">
         {activeTab === 0 && (
           <div className="tab-content">
-            <div className="tab-title">Inspired Muses</div>
-            <div className="tab-subtitle">Individual & Duo Collaborations</div>
-            <div className="tab-subtitle">$225</div>
+            <h1 className="tab-title">Inspired Muses</h1>
+            <div className="tab-options">
+              <div className="tab-option-group">
+                <p className="tab-ind">Individual</p>
+                <p className="tab-cost-ind">$125</p>
+              </div>
+              <div className="divider"></div>
+              <div className="tab-option-group">
+                <p className="tab-duo">Duo</p>
+                <p className="tab-cost-duo">$225</p>
+              </div>
+            </div>
             <ul className="feature-list">
               <li>Up to three hours</li>
               <li>Shared Restricted Google Drive</li>
@@ -52,13 +62,23 @@ export default function Pricingtier2() {
               <li>Optional:</li>
               <li>1x Poster (up to 1.2m x 1.2m) Original/B+W</li>
             </ul>
+            <Booknowbutton />
           </div>
         )}
         {activeTab === 1 && (
           <div className="tab-content">
-            <div className="tab-title">Inspired Muses</div>
-            <div className="tab-subtitle">Individual & Duo Collaborations</div>
-            <div className="tab-subtitle">$320</div>
+            <h1 className="tab-title">Inspired Muses</h1>
+            <div className="tab-options">
+              <div className="tab-option-group">
+                <p className="tab-ind">Individual</p>
+                <p className="tab-cost-ind">$220</p>
+              </div>
+              <div className="divider"></div>
+              <div className="tab-option-group">
+                <p className="tab-duo">Duo</p>
+                <p className="tab-cost-duo">$320</p>
+              </div>
+            </div>
             <ul className="feature-list">
               <li>Four or more hours</li>
               <li>Shared Restricted Google Drive</li>
@@ -69,13 +89,23 @@ export default function Pricingtier2() {
               <li>Optional:</li>
               <li>1x Poster (up to 1.2m x 1.2m) Original/B+W</li>
             </ul>
+            <Booknowbutton />
           </div>
         )}
         {activeTab === 2 && (
           <div className="tab-content">
-            <div className="tab-title">Inspired Muses</div>
-            <div className="tab-subtitle">Individual & Duo Collaborations</div>
-            <div className="tab-subtitle">$380</div>
+            <h1 className="tab-title">Inspired Muses</h1>
+            <div className="tab-options">
+              <div className="tab-option-group">
+                <p className="tab-ind">Individual</p>
+                <p className="tab-cost-ind">$280</p>
+              </div>
+              <div className="divider"></div>
+              <div className="tab-option-group">
+                <p className="tab-duo">Duo</p>
+                <p className="tab-cost-duo">$380</p>
+              </div>
+            </div>
             <ul className="feature-list">
               <li>Six hours max</li>
               <li>Shared Restricted Google Drive</li>
@@ -86,6 +116,7 @@ export default function Pricingtier2() {
               <li>Optional:</li>
               <li>1x Poster (up to 1.2m x 1.2m) Original/B+W</li>
             </ul>
+            <Booknowbutton />
           </div>
         )}
       </div>
