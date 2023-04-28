@@ -85,7 +85,7 @@ export default function Landingpage() {
       <div className="section-one">
         <img
           className="section-image"
-          src="./mobile-forest-small.jpg"
+          src="./ocean-green.jpg"
           alt="mobile-leila"
         />
         {/* <h1 className="section-title">Life, captured beautifully.</h1> */}
