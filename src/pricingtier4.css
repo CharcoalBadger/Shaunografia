@@ -1,4 +1,4 @@
-.p2bed-content {
+.p4bed-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   font-weight: bold;
 }
 
-.p2-options {
+.p4-options {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,11 +29,11 @@
   width: 100%;
 }
 
-.p2-option-group {
+.p4-option-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 .divider {
@@ -43,13 +43,13 @@
   margin: 0 5px;
 }
 
-.p2s {
+.p4s {
   display: flex;
   flex-direction: column;
   margin-top: -13.2rem;
 }
 
-.p2 {
+.p4 {
   font-weight: bold;
   font-family: var(--ff-secondary);
   padding: 10px 10px;
@@ -69,7 +69,7 @@
   background-color: var(--body-hover);
 }
 
-.p2:hover {
+.p4:hover {
   background-color: var(--body-hover);
 }
 
@@ -86,35 +86,35 @@
   justify-content: center;
 }
 
-.p2-content {
+.p4-content {
   margin-bottom: 20px;
 }
 
-.p2-title {
+.p4-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
-.p2-ind {
+.p4-ind {
   font-family: var(--ff-secondary);
   margin-bottom: 5px;
 }
 
-.p2-duo {
+.p4-duo {
   font-family: var(--ff-secondary);
   margin-bottom: 5px;
 }
 
-.p2-cost-ind {
+.p4-cost-ind {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.p2-cost-duo {
+.p4-cost-duo {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;

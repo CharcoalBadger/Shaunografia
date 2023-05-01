@@ -9,6 +9,7 @@ import Wedding from "../wedding";
 import Event from "../event";
 import Pet from "../pet";
 import Backtotop from "../backtotop";
+import Aboutstar from "../aboutstar";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Galleries() {
@@ -109,6 +110,7 @@ export default function Galleries() {
   }, []);
   return (
     <div className="galleries-container">
+      <Aboutstar />
       <div className="galleries-back">
         <Backtotop />
       </div>

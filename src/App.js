@@ -9,6 +9,7 @@ import Event from "./event";
 import Pricing from "./pricing";
 import Maincontact from "./maincontact";
 import Footer from "./footer";
+import Aboutstar from "./aboutstar";
 
 function App() {
   // This is to dynamically load certain components based on width of screen sizes
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <Aboutstar />
       <div className="main-content">
         <div className="app-anim-min"></div>
         <div className="app-block"></div>

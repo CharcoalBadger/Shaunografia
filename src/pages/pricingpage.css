@@ -13,25 +13,24 @@
   opacity: 1;
   clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
   font-size: var(--step-3);
+  margin-top: 20%;
 }
 
 .pricingpage-box {
   padding: 0 10px 0 10px;
 }
 
-/* GalleryPage.css */
-.price-gallery-page {
-  padding: 2rem;
-}
-
-.page-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .page-title h1 {
   font-size: 3rem;
   margin: 0;
+}
+
+.pricingpage-subtitle {
+  text-align: center;
+  margin: 1rem;
+  font-family: var(--ff-secondary);
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 
 .price-gallery {

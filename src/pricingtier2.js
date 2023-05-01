@@ -7,49 +7,49 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Pricingtier2() {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activep2, setActivep2] = useState(0);
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
+  const handlep2Click = (index) => {
+    setActivep2(index);
   };
 
   return (
-    <div className="tabbed-content">
+    <div className="p2bed-content">
       <div className="content-header">
-        <div className="tabs">
+        <div className="p2s">
           <div
-            className={`tab ${activeTab === 0 ? "active" : ""}`}
-            onClick={() => handleTabClick(0)}
+            className={`p2 ${activep2 === 0 ? "active" : ""}`}
+            onClick={() => handlep2Click(0)}
           >
             Basic
           </div>
           <div
-            className={`tab ${activeTab === 1 ? "active" : ""}`}
-            onClick={() => handleTabClick(1)}
+            className={`p2 ${activep2 === 1 ? "active" : ""}`}
+            onClick={() => handlep2Click(1)}
           >
             Plus
           </div>
           <div
-            className={`tab ${activeTab === 2 ? "active" : ""}`}
-            onClick={() => handleTabClick(2)}
+            className={`p2 ${activep2 === 2 ? "active" : ""}`}
+            onClick={() => handlep2Click(2)}
           >
             Pro
           </div>
         </div>
       </div>
       <div className="content-body">
-        {activeTab === 0 && (
-          <div className="tab-content">
-            <h1 className="tab-title">Inspired Muses</h1>
-            <div className="tab-options">
-              <div className="tab-option-group">
-                <p className="tab-ind">Individual</p>
-                <p className="tab-cost-ind">$125</p>
+        {activep2 === 0 && (
+          <div className="p2-content">
+            <h1 className="p2-title">Inspired Muses</h1>
+            <div className="p2-options">
+              <div className="p2-option-group">
+                <p className="p2-ind">Individual</p>
+                <p className="p2-cost-ind">$125</p>
               </div>
               <div className="divider"></div>
-              <div className="tab-option-group">
-                <p className="tab-duo">Duo</p>
-                <p className="tab-cost-duo">$225</p>
+              <div className="p2-option-group">
+                <p className="p2-duo">Duo</p>
+                <p className="p2-cost-duo">$225</p>
               </div>
             </div>
             <ul className="feature-list">
@@ -65,18 +65,18 @@ export default function Pricingtier2() {
             <Booknowbutton />
           </div>
         )}
-        {activeTab === 1 && (
-          <div className="tab-content">
-            <h1 className="tab-title">Inspired Muses</h1>
-            <div className="tab-options">
-              <div className="tab-option-group">
-                <p className="tab-ind">Individual</p>
-                <p className="tab-cost-ind">$220</p>
+        {activep2 === 1 && (
+          <div className="p2-content">
+            <h1 className="p2-title">Inspired Muses</h1>
+            <div className="p2-options">
+              <div className="p2-option-group">
+                <p className="p2-ind">Individual</p>
+                <p className="p2-cost-ind">$220</p>
               </div>
               <div className="divider"></div>
-              <div className="tab-option-group">
-                <p className="tab-duo">Duo</p>
-                <p className="tab-cost-duo">$320</p>
+              <div className="p2-option-group">
+                <p className="p2-duo">Duo</p>
+                <p className="p2-cost-duo">$320</p>
               </div>
             </div>
             <ul className="feature-list">
@@ -92,18 +92,18 @@ export default function Pricingtier2() {
             <Booknowbutton />
           </div>
         )}
-        {activeTab === 2 && (
-          <div className="tab-content">
-            <h1 className="tab-title">Inspired Muses</h1>
-            <div className="tab-options">
-              <div className="tab-option-group">
-                <p className="tab-ind">Individual</p>
-                <p className="tab-cost-ind">$280</p>
+        {activep2 === 2 && (
+          <div className="p2-content">
+            <h1 className="p2-title">Inspired Muses</h1>
+            <div className="p2-options">
+              <div className="p2-option-group">
+                <p className="p2-ind">Individual</p>
+                <p className="p2-cost-ind">$280</p>
               </div>
               <div className="divider"></div>
-              <div className="tab-option-group">
-                <p className="tab-duo">Duo</p>
-                <p className="tab-cost-duo">$380</p>
+              <div className="p2-option-group">
+                <p className="p2-duo">Duo</p>
+                <p className="p2-cost-duo">$380</p>
               </div>
             </div>
             <ul className="feature-list">

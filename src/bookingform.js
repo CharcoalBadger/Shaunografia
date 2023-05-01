@@ -122,6 +122,7 @@ export default function Bookingform() {
               option: (provided, { isFocused }) => ({
                 ...provided,
                 textAlign: "center",
+                color: "var(--color-background)",
                 backgroundColor: isFocused ? "#119DA4" : null,
               }),
             }}
