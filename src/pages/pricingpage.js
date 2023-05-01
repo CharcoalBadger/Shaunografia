@@ -5,12 +5,41 @@ import "./pricingpage.css";
 import Navbar from "../navbar";
 import Shortfooter from "../shortfooter";
 import Backtotop from "../backtotop";
-// import Pricingtier from "../pricingtier";
+import Pricingtier3 from "../pricingtier3";
 import Pricingtier2 from "../pricingtier2";
+import Pricingtier4 from "../pricingtier4";
+import Aboutstar from "../aboutstar";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Pricingpage() {
   useEffect(() => {
+    gsap.from(".pricingpage-title", {
+      scrollTrigger: {
+        trigger: ".pricingpage-container",
+        start: "top 80%",
+        end: "bottom 400px",
+      },
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      opacity: 0,
+      ease: "power4.inOut",
+      y: 100,
+      duration: 2,
+    });
+
+    gsap.from(".pricingpage-subtitle", {
+      scrollTrigger: {
+        trigger: ".pricingpage-container",
+        start: "top 80%",
+        end: "bottom 400px",
+      },
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      opacity: 0,
+      ease: "power4.inOut",
+      y: 100,
+      stagger: 0.1,
+      duration: 2.1,
+    });
+
     if (window.innerWidth <= 767) {
       console.log("if");
       console.log("if" + window.innerWidth);
@@ -55,6 +84,7 @@ export default function Pricingpage() {
   }, []);
   return (
     <div className="pricingpage-container">
+      <Aboutstar />
       <div className="pricingpage-back">
         <Backtotop />
       </div>
@@ -74,7 +104,15 @@ export default function Pricingpage() {
         towards the total cost of your session. Please note that if you cancel
         your session, the deposit will not be refunded.
       </p>
-      <Pricingtier2 />
+      <div>
+        <Pricingtier2 />
+      </div>
+      <div>
+        <Pricingtier3 />
+      </div>
+      <div>
+        <Pricingtier4 />
+      </div>
       <div>
         <Shortfooter />
       </div>
