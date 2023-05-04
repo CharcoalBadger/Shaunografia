@@ -9,6 +9,7 @@ import Pricingtier3 from "../pricingtier3";
 import Pricingtier2 from "../pricingtier2";
 import Pricingtier4 from "../pricingtier4";
 import Aboutstar from "../aboutstar";
+import Downarrow from "../downarrow";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Pricingpage() {
@@ -36,7 +37,19 @@ export default function Pricingpage() {
       opacity: 0,
       ease: "power4.inOut",
       y: 100,
-      stagger: 0.1,
+      duration: 2.1,
+    });
+
+    gsap.from(".pricingpage-subtitle2", {
+      scrollTrigger: {
+        trigger: ".pricingpage-container",
+        start: "top 80%",
+        end: "bottom 400px",
+      },
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      opacity: 0,
+      ease: "power4.inOut",
+      y: 100,
       duration: 2.1,
     });
 
@@ -98,12 +111,15 @@ export default function Pricingpage() {
         understand our services and costs. Please don't hesitate to reach out if
         you have any questions or concerns.
       </p>
-      <p className="pricingpage-subtitle">
+      <p className="pricingpage-subtitle2">
         To secure your session, we require a non-refundable deposit of 25%. This
         deposit is to cover any last-minute cancellations and will be applied
         towards the total cost of your session. Please note that if you cancel
         your session, the deposit will not be refunded.
       </p>
+      <div className="pricingpage-downarrow">
+        <Downarrow />
+      </div>
       <div>
         <Pricingtier2 />
       </div>

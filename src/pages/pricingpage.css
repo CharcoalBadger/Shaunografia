@@ -16,6 +16,11 @@
   margin-top: 20%;
 }
 
+.pricingpage-downarrow {
+  display: flex;
+  justify-content: center;
+}
+
 .pricingpage-box {
   padding: 0 10px 0 10px;
 }
@@ -31,6 +36,15 @@
   font-family: var(--ff-secondary);
   opacity: 1;
   clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.pricingpage-subtitle2 {
+  text-align: center;
+  margin: 1rem;
+  font-family: var(--ff-secondary);
+  opacity: 1;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  margin-bottom: 20%;
 }
 
 .price-gallery {
@@ -59,5 +73,11 @@
 @media (min-width: 768px) {
   .pricingpage-box {
     padding: 0 10% 0 10%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .pricingpage-title {
+    margin-top: 10%;
   }
 }

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./landingpage.css";
 // import Loop from "./loop";
 import Backtotop from "./backtotop";
+import Downarrow from "./downarrow";
 import "./App.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,7 +11,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Landingpage() {
   useEffect(() => {
-    gsap.from(".section-image", {
+    gsap.from(".section-title", {
+      scrollTrigger: {
+        trigger: ".landing-container",
+        start: "top 80%",
+        end: "bottom 400px",
+      },
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      opacity: 0,
+      ease: "power4.inOut",
+      y: 100,
+      duration: 3.5,
+    });
+
+    gsap.from(".section-title2", {
+      scrollTrigger: {
+        trigger: ".landing-container",
+        start: "top 80%",
+        end: "bottom 400px",
+      },
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      opacity: 0,
+      ease: "power4.inOut",
+      y: 100,
+      duration: 4,
+    });
+
+    gsap.from(".video-bright", {
       "clip-path": "polygon(47% 100%, 47% 100%, 47% 100%, 47% 100%)",
       opacity: 0,
       ease: "power4.inOut",
@@ -26,11 +53,11 @@ export default function Landingpage() {
       },
     });
 
-    tl.to(".section-image", {
+    tl.to(".video-bright", {
       y: "-200",
     });
     tl.to(
-      ".section-title",
+      ".section-title, .section-title2",
       {
         y: "-400",
       },
@@ -83,12 +110,20 @@ export default function Landingpage() {
   return (
     <div className="landing-container">
       <div className="section-one">
-        <img
+        {/* <img
           className="section-image"
           src="./ocean-green.jpg"
           alt="mobile-leila"
-        />
-        {/* <h1 className="section-title">Life, captured beautifully.</h1> */}
+        /> */}
+        <video autoPlay loop muted playsInline className="video-bright">
+          <source src="looped-garden-gain.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1 className="section-title">SHAUN LAL</h1>
+        <h1 className="section-title2">PHOTOGRAPHER</h1>
+      </div>
+      <div className="section-open-downarrow">
+        <Downarrow />
       </div>
       <div className="backtotop-container">
         <Backtotop />

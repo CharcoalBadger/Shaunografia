@@ -1,3 +1,6 @@
+.galleries-galleryopen {
+  margin-bottom: 100vh;
+}
 .galleries-container {
   width: 100vw;
   z-index: 0;

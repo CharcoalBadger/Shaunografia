@@ -65,6 +65,21 @@
   z-index: 0;
 }
 
+@media (min-width: 768px) {
+  .sticky-header {
+    margin-bottom: 25vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sticky-header {
+    margin-bottom: 25vh;
+  }
+  .about-open-container {
+    margin-bottom: 60vh;
+  }
+}
+
 @media (min-width: 1366px) {
   .sticky-header {
     margin-bottom: 25vh;

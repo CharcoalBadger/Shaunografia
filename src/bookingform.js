@@ -63,6 +63,7 @@ export default function Bookingform() {
   const [state, handleSubmit] = useForm("mlekjgvg");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     let timeoutId;
     if (state.submitting) {
       setButtonText("Sending...");

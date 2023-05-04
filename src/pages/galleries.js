@@ -10,6 +10,7 @@ import Event from "../event";
 import Pet from "../pet";
 import Backtotop from "../backtotop";
 import Aboutstar from "../aboutstar";
+import Maingalleryopen from "../maingalleryopen";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Galleries() {
@@ -117,19 +118,8 @@ export default function Galleries() {
       <div>
         <Navbar />
       </div>
-      <div className="galleries-box">
-        <h1 className="galleries-title">Galleries</h1>
-        <p className="galleries-para-1">
-          Discover beautiful photos of individuals, couples, pets, and special
-          events in our galleries.
-        </p>
-        <p className="galleries-para-2">
-          From creative shoots to wedding and engagement photography, we
-          specialize in capturing unforgettable moments.
-        </p>
-        <p className="galleries-para-3">
-          Browse our galleries and book your photoshoot today!
-        </p>
+      <div className="galleries-galleryopen">
+        <Maingalleryopen />
       </div>
       <div>
         <Creative />

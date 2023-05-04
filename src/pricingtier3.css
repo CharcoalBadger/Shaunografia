@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.content-header {
+.p3content-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +45,7 @@
 .engagements-and-elopements {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 50%;
 }
 
 .divider {
@@ -55,10 +55,26 @@
   margin: 0 5px;
 }
 
+.p3main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
 .p3s {
   display: flex;
   flex-direction: column;
-  margin-top: -19.9rem;
+  flex-wrap: nowrap; /* Add this property to prevent wrapping */
+  position: absolute;
+  top: 0;
+  right: -12px; /* Adjust this value as needed to position the tabs on the right side */
+}
+
+.basic-active {
+  /* Adjust the top and right values according to your needs */
+  top: 20px; /* Example value to shift the element down */
+  right: -50px; /* Example value to shift the element left */
 }
 
 .p3 {
@@ -76,6 +92,12 @@
   text-orientation: upright;
 }
 
+.space-filler {
+  display: inline-block;
+  width: 275px;
+  height: 2px;
+}
+
 .active {
   color: #119da4;
   background-color: var(--body-hover);
@@ -85,7 +107,7 @@
   background-color: var(--body-hover);
 }
 
-.content-body {
+.p3content-body {
   width: 80%;
   height: 80%;
   background-color: var(--body-background);
@@ -178,4 +200,110 @@
 
 .p3special-list li {
   margin-bottom: 10px;
+}
+
+@media (min-width: 360px) {
+  .p3s {
+    top: 0;
+    right: -5px;
+  }
+  .space-filler {
+    width: 315px;
+  }
+}
+
+@media (min-width: 380px) {
+  .p3s {
+    top: 0;
+    right: -2px;
+  }
+  .space-filler {
+    width: 330px;
+  }
+}
+
+@media (min-width: 414px) {
+  .p3s {
+    top: 0;
+    right: 0px;
+  }
+  .space-filler {
+    width: 337px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p3s {
+    top: 0;
+    right: 9px;
+  }
+  .space-filler {
+    width: 379px;
+  }
+}
+
+@media (min-width: 800px) {
+  .p3bed-content {
+    margin-top: -80%;
+  }
+}
+
+@media (min-width: 810px) {
+  .p3bed-content {
+    margin-top: -50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p3s {
+    top: 0;
+    right: 16px;
+  }
+  .space-filler {
+    width: 422px;
+  }
+  .p3bed-content {
+    margin-top: -20%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .p3s {
+    top: 0;
+    right: 26px;
+  }
+  .space-filler {
+    width: 465px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .p3bed-content {
+    margin-top: -2%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .p3bed-content {
+    margin-top: -20%;
+  }
+}
+
+@media (min-width: 1792px) {
+  .p3bed-content {
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .p3s {
+    top: 0;
+    right: 34px;
+  }
+  .space-filler {
+    width: 505px;
+  }
+  .p3bed-content {
+    margin-top: -20%;
+  }
 }
