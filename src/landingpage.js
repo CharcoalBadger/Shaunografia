@@ -116,7 +116,7 @@ export default function Landingpage() {
           alt="mobile-leila"
         /> */}
         <video autoPlay loop muted playsInline className="video-bright">
-          <source src="looped-garden-gain.mp4" type="video/mp4" />
+          <source src="looped-garden-gain-m.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <h1 className="section-title">SHAUN LAL</h1>
