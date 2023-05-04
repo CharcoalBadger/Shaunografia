@@ -12,6 +12,24 @@ import Footer from "./footer";
 import Aboutstar from "./aboutstar";
 import Loadingscreen from "./loadingscreen";
 
+// // Check if the user has visited the site before
+// const isFirstVisit = !localStorage.getItem("visitedBefore");
+
+// if (isFirstVisit) {
+//   // Simulate loading process
+//   const timer = setTimeout(() => {
+//     setIsLoading(false);
+//   }, 3000); // Change the duration as needed (in milliseconds)
+
+//   // Set the flag in localStorage
+//   localStorage.setItem("visitedBefore", "true");
+
+//   // Clean up the timer when the component is unmounted
+//   return () => clearTimeout(timer);
+// } else {
+//   setIsLoading(false);
+// }
+
 function App() {
   // Loading screen state
   const [isLoading, setIsLoading] = useState(true);
@@ -23,27 +41,17 @@ function App() {
   };
 
   useEffect(() => {
-    // Check if the user has visited the site before
-    const isFirstVisit = !localStorage.getItem("visitedBefore");
-
-    if (isFirstVisit) {
-      // Simulate loading process
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-      }, 3000); // Change the duration as needed (in milliseconds)
-
-      // Set the flag in localStorage
-      localStorage.setItem("visitedBefore", "true");
-
-      // Clean up the timer when the component is unmounted
-      return () => clearTimeout(timer);
-    } else {
+    // Simulate loading process
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    }
+    }, 3000); // Change the duration as needed (in milliseconds)
 
     updateApp();
     window.addEventListener("resize", updateApp);
-    return () => window.removeEventListener("resize", updateApp);
+    return () => {
+      window.removeEventListener("resize", updateApp);
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
