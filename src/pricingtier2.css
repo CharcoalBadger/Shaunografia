@@ -231,7 +231,7 @@
 
 @media (min-width: 1440px) {
   .p2-content {
-    height: 60vh;
+    height: 65vh;
   }
 }
 
@@ -241,6 +241,15 @@
   }
   .p2-content {
     height: 70vh;
+  }
+}
+
+@media (min-width: 1850px) {
+  .p2bed-content {
+    margin-top: 5%;
+  }
+  .p2-content {
+    height: 60vh;
   }
 }
 

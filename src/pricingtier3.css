@@ -307,10 +307,10 @@
 
 @media (min-width: 1440px) {
   .p3bed-content {
-    margin-top: -20%;
+    margin-top: -2%;
   }
   .p3-content {
-    height: 80vh;
+    height: 85vh;
   }
 }
 
@@ -329,6 +329,15 @@
   }
   .p3-content {
     height: 90vh;
+  }
+}
+
+@media (min-width: 1850px) {
+  .p3bed-content {
+    margin-top: -10%;
+  }
+  .p3-content {
+    height: 75vh;
   }
 }
 

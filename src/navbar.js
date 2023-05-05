@@ -25,6 +25,7 @@ function Navbar() {
 
   useEffect(() => {
     updateNav();
+    console.log(window.innerWidth);
     window.addEventListener("resize", updateNav);
     return () => window.removeEventListener("resize", updateNav);
   });

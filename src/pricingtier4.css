@@ -238,11 +238,11 @@
 
 @media (min-width: 1440px) {
   .p4bed-content {
-    margin-top: -20%;
+    margin-top: -10%;
     margin-bottom: -5%;
   }
   .p4-content {
-    height: 60vh;
+    height: 65vh;
   }
 }
 
@@ -262,6 +262,16 @@
   }
   .p4-content {
     height: 70vh;
+  }
+}
+
+@media (min-width: 1850px) {
+  .p4bed-content {
+    margin-top: -10%;
+    margin-bottom: -5%;
+  }
+  .p4-content {
+    height: 60vh;
   }
 }
 
