@@ -350,18 +350,6 @@
   }
 }
 
-@media (min-width: 1890px) {
-  .p3bed-content {
-    margin-top: -10%;
-  }
-  .p3-content {
-    height: 55vh;
-  }
-  .p3-eng {
-    color: red;
-  }
-}
-
 @media (min-width: 1920px) {
   .p3s {
     top: 0;
@@ -371,7 +359,7 @@
     width: 505px;
   }
   .p3bed-content {
-    margin-top: -20%;
+    margin-top: -10%;
   }
   .p3-content {
     height: 80vh;
