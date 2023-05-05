@@ -321,6 +321,9 @@
   .p3-content {
     height: 80vh;
   }
+  .p3-eng {
+    color: purple;
+  }
 }
 
 @media (min-width: 1792px) {
@@ -330,6 +333,9 @@
   .p3-content {
     height: 90vh;
   }
+  .p3-eng {
+    color: green;
+  }
 }
 
 @media (min-width: 1850px) {
@@ -338,6 +344,21 @@
   }
   .p3-content {
     height: 75vh;
+  }
+  .p3-eng {
+    color: blue;
+  }
+}
+
+@media (min-width: 1890px) {
+  .p3bed-content {
+    margin-top: -10%;
+  }
+  .p3-content {
+    height: 55vh;
+  }
+  .p3-eng {
+    color: red;
   }
 }
 
@@ -354,5 +375,8 @@
   }
   .p3-content {
     height: 80vh;
+  }
+  .p3-eng {
+    color: yellow;
   }
 }
