@@ -11,18 +11,45 @@ h1 {
   font-family: "Arial", sans-serif;
   font-size: 24px;
   color: var(--body-color);
+  margin-bottom: 20px;
 }
 
-.loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #119da4;
-  border-radius: 50%;
+.shutter-loader {
+  position: relative;
   width: 60px;
   height: 60px;
-  animation: spin 2s linear infinite;
 }
 
-@keyframes spin {
+.shutter {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #119da4;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  animation: shutter-rotate 2s linear infinite;
+}
+
+.shutter:nth-child(2) {
+  transform: rotate(60deg);
+}
+
+.shutter:nth-child(3) {
+  transform: rotate(120deg);
+}
+
+.shutter:nth-child(4) {
+  transform: rotate(180deg);
+}
+
+.shutter:nth-child(5) {
+  transform: rotate(240deg);
+}
+
+.shutter:nth-child(6) {
+  transform: rotate(300deg);
+}
+
+@keyframes shutter-rotate {
   0% {
     transform: rotate(0deg);
   }

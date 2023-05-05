@@ -23,6 +23,7 @@
   justify-content: center;
   flex-direction: column;
   font-family: var(--ff-primary);
+  font-size: var(--step-1);
 }
 
 .creative-subtitle {
