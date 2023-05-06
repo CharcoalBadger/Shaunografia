@@ -10,7 +10,8 @@ import Pricing from "./pricing";
 import Maincontact from "./maincontact";
 import Footer from "./footer";
 import Aboutstar from "./aboutstar";
-import Loadingscreen from "./loadingscreen";
+// import Loadingscreen from "./loadingscreen";
+import Split from "./split";
 
 // // Check if the user has visited the site before
 // const isFirstVisit = !localStorage.getItem("visitedBefore");
@@ -31,6 +32,8 @@ import Loadingscreen from "./loadingscreen";
 // }
 
 function App() {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
   // Loading screen state
   const [isLoading, setIsLoading] = useState(true);
   // This is to dynamically load certain components based on width of screen sizes
@@ -44,7 +47,7 @@ function App() {
     // Simulate loading process
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Change the duration as needed (in milliseconds)
+    }, 7000); // Change the duration as needed (in milliseconds)
 
     updateApp();
     window.addEventListener("resize", updateApp);
@@ -56,12 +59,15 @@ function App() {
 
   return (
     <div className="App">
+      <Aboutstar />
       {isLoading ? (
-        <Loadingscreen />
+        <Split
+          duration={7000}
+          onFinishedLoading={() => setIsContentVisible(true)}
+        />
       ) : (
         <>
-          <Aboutstar />
-          <div className="main-content">
+          <div className={`main-content ${isContentVisible ? "visible" : ""}`}>
             <div className="section-1">
               <Navbar />
             </div>

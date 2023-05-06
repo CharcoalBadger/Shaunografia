@@ -11,31 +11,47 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Landingpage() {
   useEffect(() => {
-    gsap.from(".section-title", {
-      scrollTrigger: {
-        trigger: ".landing-container",
-        start: "top 80%",
-        end: "bottom 400px",
+    gsap.fromTo(
+      ".section-title",
+      {
+        "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+        opacity: 0,
+        y: 100,
       },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 3.5,
-    });
+      {
+        scrollTrigger: {
+          trigger: ".landing-container",
+          start: "top 80%",
+          end: "bottom 400px",
+        },
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        opacity: 1,
+        y: 0,
+        ease: "power4.inOut",
+        duration: 3.5,
+      }
+    );
 
-    gsap.from(".section-title2", {
-      scrollTrigger: {
-        trigger: ".landing-container",
-        start: "top 80%",
-        end: "bottom 400px",
+    gsap.fromTo(
+      ".section-title2",
+      {
+        "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+        opacity: 0,
+        y: 100,
       },
-      "clip-path": "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-      opacity: 0,
-      ease: "power4.inOut",
-      y: 100,
-      duration: 4,
-    });
+      {
+        scrollTrigger: {
+          trigger: ".landing-container",
+          start: "top 80%",
+          end: "bottom 400px",
+        },
+        "clip-path": "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        opacity: 1,
+        y: 0,
+        ease: "power4.inOut",
+        duration: 4,
+      }
+    );
 
     gsap.from(".video-bright", {
       "clip-path": "polygon(47% 100%, 47% 100%, 47% 100%, 47% 100%)",

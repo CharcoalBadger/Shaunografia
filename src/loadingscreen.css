@@ -1,59 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background-color: #29d;
+  z-index: 2001;
+  transition: width 0.25s;
+}
+
+.progress-bar-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30%;
+  height: 2px;
+  background-color: rgba(
+    41,
+    221,
+    255,
+    0.2
+  ); /* Change this color to your preference */
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+  overflow: hidden; /* Add this line */
+}
+
+.left-bar {
+  left: 50%;
+  width: 0%;
+  transform: translateX(-100%);
+}
+
+.right-bar {
+  left: 50%;
+  width: 0%;
+}
+
+.loading-container.loaded .progress-bar {
+  width: 50%;
+  animation: extend 1s forwards;
+  animation-timing-function: ease-out;
+}
+
 .loading-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: var(--body-background);
-}
-
-h1 {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  color: var(--body-color);
-  margin-bottom: 20px;
-}
-
-.shutter-loader {
-  position: relative;
-  width: 60px;
-  height: 60px;
-}
-
-.shutter {
-  position: absolute;
-  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background-color: #119da4;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  animation: shutter-rotate 2s linear infinite;
+  background-color: var(--body-background);
+  z-index: 9999;
+  overflow: hidden;
 }
 
-.shutter:nth-child(2) {
-  transform: rotate(60deg);
+.typewriter {
+  position: relative;
+  margin-top: -5%;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  z-index: 1;
 }
 
-.shutter:nth-child(3) {
-  transform: rotate(120deg);
+.typewriter h1 {
+  color: var(--body-color);
+  font-size: 24px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid var(--body-color);
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.shutter:nth-child(4) {
-  transform: rotate(180deg);
+.split-background-top,
+.split-background-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--body-background);
+  z-index: 0;
+  transition: transform 3s;
 }
 
-.shutter:nth-child(5) {
-  transform: rotate(240deg);
+.split-background-top {
+  top: 0;
 }
 
-.shutter:nth-child(6) {
-  transform: rotate(300deg);
+.split-background-bottom {
+  bottom: 0;
 }
 
-@keyframes shutter-rotate {
-  0% {
-    transform: rotate(0deg);
+.loading-container.loaded .split-background-top {
+  animation: slide-top 1s forwards;
+}
+
+.loading-container.loaded .split-background-bottom {
+  animation: slide-bottom 1s forwards;
+}
+
+@keyframes slide-top {
+  from {
+    transform: translateY(0);
   }
-  100% {
-    transform: rotate(360deg);
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-bottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--body-color);
   }
 }

@@ -36,6 +36,18 @@ function Navbar() {
       duration: 2.5,
       ease: "power4.inOut",
     });
+
+    gsap.fromTo(
+      ".nav-name",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 0.7,
+        duration: 2.5,
+        ease: "power4.inOut",
+      }
+    );
   }, []);
 
   return (

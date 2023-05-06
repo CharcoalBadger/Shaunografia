@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./loadingscreen.css";
 
-const Loadingscreen = () => {
+const Loadingscreen = ({ duration }) => {
   return (
     <div className="loading-container">
-      <h1>Loading...</h1>
-      <div className="shutter-loader">
-        <div className="shutter"></div>
-        <div className="shutter"></div>
-        <div className="shutter"></div>
-        <div className="shutter"></div>
-        <div className="shutter"></div>
-        <div className="shutter"></div>
+      <div className="progress-bar-container">
+        <div className="progress-bar left-bar"></div>
+        <div className="progress-bar right-bar"></div>
       </div>
+      <div className="typewriter">
+        <h1>Welcome To Shaunografia</h1>
+      </div>
+      <div className="split-background-top"></div>
+      <div className="split-background-bottom"></div>
     </div>
   );
 };

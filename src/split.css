@@ -1,0 +1,85 @@
+.opener-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocks {
+  width: 100%;
+  height: 109vh;
+}
+
+.block {
+  position: fixed;
+  width: 100vw;
+  height: 50%;
+  z-index: 1;
+  background-color: black; /* Update this to match your website's background color */
+}
+
+.block-top {
+  top: 0;
+}
+
+.block-bottom {
+  bottom: 0;
+}
+
+.typewriter {
+  position: absolute;
+  margin-top: -5%;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  z-index: 99999;
+}
+
+.typewriter h1 {
+  color: var(--body-color);
+  font-size: 24px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid var(--body-color);
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.progress-bar-top {
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999999;
+}
+
+.progress-bar-bottom {
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background-color: white;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 999999;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--body-color);
+  }
+}

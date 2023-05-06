@@ -321,9 +321,6 @@
   .p3-content {
     height: 80vh;
   }
-  .p3-eng {
-    color: purple;
-  }
 }
 
 @media (min-width: 1792px) {
@@ -333,9 +330,6 @@
   .p3-content {
     height: 90vh;
   }
-  .p3-eng {
-    color: green;
-  }
 }
 
 @media (min-width: 1850px) {
@@ -344,9 +338,6 @@
   }
   .p3-content {
     height: 75vh;
-  }
-  .p3-eng {
-    color: blue;
   }
 }
 
@@ -363,8 +354,5 @@
   }
   .p3-content {
     height: 80vh;
-  }
-  .p3-eng {
-    color: yellow;
   }
 }
