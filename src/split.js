@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "./split.css";
 
-function Split({ onFinishedLoading }) {
+function Split({ setIsSplitMounted }) {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -28,21 +28,19 @@ function Split({ onFinishedLoading }) {
       });
     }, 3500);
 
-    gsap.to([".block-top", ".progress-bar-top"], 2, {
+    gsap.to([".block-top", ".progress-bar-top"], {
       top: "-50%",
       ease: "power3.inOut",
       delay: 4.5,
     });
 
-    gsap.to([".block-bottom", ".progress-bar-bottom"], 2, {
+    gsap.to([".block-bottom", ".progress-bar-bottom"], {
       bottom: "-50%",
       ease: "power3.inOut",
       delay: 4.5,
       onComplete: () => {
-        setTimeout(() => {
-          document.body.style.overflow = "";
-          onFinishedLoading(); // Call the function passed as a prop
-        }, 500); // Add a delay before calling the function
+        document.body.style.overflow = "";
+        setIsSplitMounted(true); // Set the state variable to true
       },
     });
 
@@ -52,7 +50,7 @@ function Split({ onFinishedLoading }) {
       duration: 0.1,
       delay: 4.4,
     });
-  }, [onFinishedLoading]);
+  }, [setIsSplitMounted]);
 
   return (
     <div className="opener-container">

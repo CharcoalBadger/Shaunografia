@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./landingpage.css";
-// import Loop from "./loop";
 import Backtotop from "./backtotop";
 import Downarrow from "./downarrow";
+import Split from "./split";
 import "./App.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,7 +10,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Landingpage() {
+  const [isSplitMounted, setIsSplitMounted] = useState(false);
+
   useEffect(() => {
+    // Check if the Split component has not been mounted yet
+    if (!isSplitMounted) {
+      setIsSplitMounted(true); // Set the state variable to true
+      return; // Exit early without running the animation code
+    }
+
     gsap.fromTo(
       ".section-title",
       {
@@ -29,6 +37,7 @@ export default function Landingpage() {
         y: 0,
         ease: "power4.inOut",
         duration: 3.5,
+        delay: 3.5,
       }
     );
 
@@ -50,6 +59,7 @@ export default function Landingpage() {
         y: 0,
         ease: "power4.inOut",
         duration: 4,
+        delay: 3.5,
       }
     );
 
@@ -58,6 +68,7 @@ export default function Landingpage() {
       opacity: 0,
       ease: "power4.inOut",
       duration: 3,
+      delay: 3.5,
     });
 
     const tl = gsap.timeline({
@@ -71,11 +82,13 @@ export default function Landingpage() {
 
     tl.to(".video-bright", {
       y: "-200",
+      delay: 4,
     });
     tl.to(
       ".section-title, .section-title2",
       {
         y: "-400",
+        delay: 3.5,
       },
       0
     );
@@ -121,11 +134,13 @@ export default function Landingpage() {
         0
       );
     }
-  }, []);
+  }, [isSplitMounted]);
 
   return (
     <div className="landing-container">
+      {!isSplitMounted && <Split setIsSplitMounted={setIsSplitMounted} />}
       <div className="section-one">
+        <Split />
         {/* <img
           className="section-image"
           src="./ocean-green.jpg"

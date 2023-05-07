@@ -14,6 +14,7 @@ export default function Navright() {
       {
         opacity: 1,
         duration: 2,
+        delay: 3.5,
         ease: "power4.inOut",
         stagger: 0.2,
       }
