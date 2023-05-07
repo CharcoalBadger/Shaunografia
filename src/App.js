@@ -30,9 +30,12 @@ import Split from "./split";
 //   setIsLoading(false);
 // }
 
-const isFirstVisit = !sessionStorage.getItem("visitedBefore");
+const navigationType =
+  window.performance.getEntriesByType("navigation")[0]?.type;
+const isFirstVisit =
+  !sessionStorage.getItem("visitedBefore") || navigationType === "reload";
 
-if (isFirstVisit) {
+if (!sessionStorage.getItem("visitedBefore")) {
   sessionStorage.setItem("visitedBefore", "true");
 }
 
