@@ -30,10 +30,13 @@ import Split from "./split";
 //   setIsLoading(false);
 // }
 
+const isFirstVisit = !sessionStorage.getItem("visitedBefore");
+
+if (isFirstVisit) {
+  sessionStorage.setItem("visitedBefore", "true");
+}
+
 function App() {
-  const [showSplit, setShowSplit] = useState(
-    !localStorage.getItem("visitedBefore")
-  );
   // Loading screen state
   // const [isLoading, setIsLoading] = useState(true);
   // This is to dynamically load certain components based on width of screen sizes
@@ -47,51 +50,48 @@ function App() {
     // Simulate loading process
     // const timer = setTimeout(() => {
     //   setIsLoading(false);
-    // }, 6000); // Change the duration as needed (in milliseconds)
+    // }, 5000); // Change the duration as needed (in milliseconds)
 
     updateApp();
     window.addEventListener("resize", updateApp);
+
     return () => {
       window.removeEventListener("resize", updateApp);
       // clearTimeout(timer);
     };
-  }, []);
-
-  const handleSplitMounted = () => {
-    setShowSplit(false);
-    localStorage.setItem("visitedBefore", "true");
-  };
+  });
 
   return (
     <div className="App">
-      {showSplit && <Split setIsSplitMounted={handleSplitMounted} />}
       <Aboutstar />
-
-      <div className="section-1">
-        <Navbar />
-      </div>
-      <div className="section-2">
-        <Landingpage splitRan={!showSplit} />
-      </div>
-      <div className="section-3">
-        <Aboutsection />
-      </div>
-      <div className="section-4">
-        <Creative />
-      </div>
-      <div className="section-5">
-        <Wedding />
-      </div>
-      <div className="section-6">
-        <Event />
-      </div>
-      <div className="section-7">
-        <Pricing />
-      </div>
-      <div className="section-8">{isApp ? <div></div> : <Maincontact />}</div>
-      <div className="section-9">
-        <Footer />
-      </div>
+      {isFirstVisit && <Split />}
+      <>
+        <div className="section-1">
+          <Navbar />
+        </div>
+        <div className="section-2">
+          <Landingpage />
+        </div>
+        <div className="section-3">
+          <Aboutsection />
+        </div>
+        <div className="section-4">
+          <Creative />
+        </div>
+        <div className="section-5">
+          <Wedding />
+        </div>
+        <div className="section-6">
+          <Event />
+        </div>
+        <div className="section-7">
+          <Pricing />
+        </div>
+        <div className="section-8">{isApp ? <div></div> : <Maincontact />}</div>
+        <div className="section-9">
+          <Footer />
+        </div>
+      </>
     </div>
   );
 }

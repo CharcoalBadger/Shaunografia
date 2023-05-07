@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "./split.css";
 
-function Split({ setIsSplitMounted }) {
+function Split() {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -40,7 +40,6 @@ function Split({ setIsSplitMounted }) {
       delay: 4.5,
       onComplete: () => {
         document.body.style.overflow = "";
-        setIsSplitMounted(true); // Set the state variable to true
       },
     });
 
@@ -50,7 +49,7 @@ function Split({ setIsSplitMounted }) {
       duration: 0.1,
       delay: 4.4,
     });
-  }, [setIsSplitMounted]);
+  });
 
   return (
     <div className="opener-container">
