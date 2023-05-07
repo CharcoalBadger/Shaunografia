@@ -71,7 +71,7 @@ function App() {
         <Navbar />
       </div>
       <div className="section-2">
-        <Landingpage />
+        <Landingpage splitRan={!showSplit} />
       </div>
       <div className="section-3">
         <Aboutsection />
