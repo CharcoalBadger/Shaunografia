@@ -45,7 +45,7 @@ function Navbar() {
       {
         opacity: 0.7,
         duration: 2.5,
-        delay: 3.5,
+
         ease: "power4.inOut",
       }
     );
@@ -57,7 +57,7 @@ function Navbar() {
       {
         opacity: 0.9,
         duration: 2.5,
-        delay: 3.5,
+
         ease: "power4.inOut",
       }
     );

@@ -29,7 +29,7 @@
 
 .typewriter {
   position: absolute;
-  margin-top: -10%;
+  margin-top: -5%;
   overflow: hidden;
   font-family: "Source Code Pro", monospace;
   z-index: 99999;

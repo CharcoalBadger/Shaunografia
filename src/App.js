@@ -10,6 +10,7 @@ import Pricing from "./pricing";
 import Maincontact from "./maincontact";
 import Footer from "./footer";
 import Aboutstar from "./aboutstar";
+import Split from "./split";
 
 // // Check if the user has visited the site before
 // const isFirstVisit = !localStorage.getItem("visitedBefore");
@@ -30,6 +31,9 @@ import Aboutstar from "./aboutstar";
 // }
 
 function App() {
+  const [showSplit, setShowSplit] = useState(
+    !localStorage.getItem("visitedBefore")
+  );
   // Loading screen state
   // const [isLoading, setIsLoading] = useState(true);
   // This is to dynamically load certain components based on width of screen sizes
@@ -53,8 +57,14 @@ function App() {
     };
   }, []);
 
+  const handleSplitMounted = () => {
+    setShowSplit(false);
+    localStorage.setItem("visitedBefore", "true");
+  };
+
   return (
     <div className="App">
+      {showSplit && <Split setIsSplitMounted={handleSplitMounted} />}
       <Aboutstar />
 
       <div className="section-1">
