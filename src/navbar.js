@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Navbar() {
+function Navbar({ isSplitActive }) {
   //this is to handle the logo home button
   const handleImageButtonClick = () => {
     setTimeout(() => {
@@ -30,7 +30,42 @@ function Navbar() {
     return () => window.removeEventListener("resize", updateNav);
   });
 
-  useEffect(() => {
+  const animationSplitn = () => {
+    // Put the animations you want to run when Split component is active
+    gsap.from(".navbar-main-container", {
+      opacity: 0,
+      duration: 2.5,
+      ease: "power4.inOut",
+    });
+
+    gsap.fromTo(
+      ".nav-name",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 0.7,
+        duration: 2.5,
+        delay: 3.5,
+        ease: "power4.inOut",
+      }
+    );
+    gsap.fromTo(
+      ".nav-logo",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 0.9,
+        duration: 2.5,
+        delay: 3.5,
+        ease: "power4.inOut",
+      }
+    );
+  };
+
+  const animationDefaultn = () => {
+    // Put the animations you want to run when Split component is NOT active
     gsap.from(".navbar-main-container", {
       opacity: 0,
       duration: 2.5,
@@ -61,7 +96,16 @@ function Navbar() {
         ease: "power4.inOut",
       }
     );
-  }, []);
+  };
+  // Other code remains the same
+
+  useEffect(() => {
+    if (isSplitActive) {
+      animationSplitn();
+    } else {
+      animationDefaultn();
+    }
+  });
 
   return (
     <div className="navbar-main-container">
@@ -87,7 +131,7 @@ function Navbar() {
             {/* <div className="nav-darkmode">
               <DarkMode />
             </div> */}
-            <Navright />
+            <Navright isSplitActive={isSplitActive} />
           </div>
         ) : (
           <div>

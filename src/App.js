@@ -70,10 +70,10 @@ function App() {
       {isFirstVisit && <Split />}
       <>
         <div className="section-1">
-          <Navbar />
+          <Navbar isSplitActive={isFirstVisit} />
         </div>
         <div className="section-2">
-          <Landingpage />
+          <Landingpage isSplitActive={isFirstVisit} />
         </div>
         <div className="section-3">
           <Aboutsection />
