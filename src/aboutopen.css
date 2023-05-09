@@ -15,7 +15,7 @@
 }
 
 .extra-space {
-  height: 100vh; /* Adjust this value to control how much longer the sticky header will scroll */
+  height: 80vh; /* Adjust this value to control how much longer the sticky header will scroll */
 }
 
 .sticky-header {
