@@ -158,9 +158,14 @@ export default function Footer() {
         <Linktotop to="/Contact" className="footer-privacy">
           Privacy policy
         </Linktotop>
-        <Linktotop to="/Contact" className="footer-sitemap">
+        <a
+          href="/sitemap.xml"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-sitemap"
+        >
           Sitemap
-        </Linktotop>
+        </a>
       </div>
     </div>
   );
