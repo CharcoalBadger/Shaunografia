@@ -139,9 +139,14 @@ export default function Shortfooter() {
         <Linktotop to="/Contact" className="shortfooter-privacy">
           Privacy policy
         </Linktotop>
-        <Linktotop to="/Contact" className="shortfooter-sitemap">
+        <a
+          href="/sitemap.xml"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-sitemap"
+        >
           Sitemap
-        </Linktotop>
+        </a>
       </div>
     </div>
   );
