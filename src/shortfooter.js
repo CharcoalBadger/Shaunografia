@@ -136,7 +136,15 @@ export default function Shortfooter() {
         <p className="shortfooter-copyright">
           Copyright © 2023 Shaunografia. All rights reserved.
         </p>
-        <Linktotop to="/Contact" className="shortfooter-privacy">
+        <a
+          href="https://www.instagram.com/shaunografia/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-sitemap"
+        >
+          Website created by William Douglas
+        </a>
+        <Linktotop to="/privacypolicy" className="shortfooter-privacy">
           Privacy policy
         </Linktotop>
         <a

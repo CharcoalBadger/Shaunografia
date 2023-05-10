@@ -11,6 +11,7 @@ import Creativepage from "./pages/creativepage";
 import Eventpage from "./pages/eventpage";
 import Petpage from "./pages/petpage";
 import Bookingform from "./bookingform";
+import Privacypolicy from "./privacypolicy";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "contactform",
     element: <Bookingform />,
+  },
+  {
+    path: "privacypolicy",
+    element: <Privacypolicy />,
   },
 ]);
 
