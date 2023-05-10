@@ -11,6 +11,8 @@ import Maincontact from "./maincontact";
 import Footer from "./footer";
 import Aboutstar from "./aboutstar";
 import Split from "./split";
+import { trackPageView } from "./analytics";
+import { useLocation } from "react-router-dom";
 
 // // Check if the user has visited the site before
 // const isFirstVisit = !localStorage.getItem("visitedBefore");
@@ -40,6 +42,11 @@ if (!sessionStorage.getItem("visitedBefore")) {
 }
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
   // Loading screen state
   // const [isLoading, setIsLoading] = useState(true);
   // This is to dynamically load certain components based on width of screen sizes
